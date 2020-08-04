@@ -1,10 +1,2 @@
-
-
-
-let con = (a, b) =>  {
-    return console.log(a*b)
-}
-
-con(13, 2)
-
-
+let add = (a,b) => a+b
+console.log(add(2,6))

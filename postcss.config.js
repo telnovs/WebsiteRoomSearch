@@ -1,4 +1,4 @@
-//c
+//для css
 module.exports = {
     plugins: [
         require('autoprefixer'),
