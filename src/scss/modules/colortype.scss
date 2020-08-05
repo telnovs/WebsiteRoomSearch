@@ -1,0 +1,41 @@
+$mainFontColor100 :  #1F2041;
+$mainFontColor75  :  rgba(31, 32, 65, 0.75);
+$mainFontColor50  :  rgba(31, 32, 65, 0.5);
+$mainFontColor25  :  rgba(31, 32, 65, 0.25);
+$mainFontColor5   :  rgba(31, 32, 65, 0.05);
+$purpleFontColor  :  #BC9CFF;
+$greenFontColor   :  #6FCF97;
+/*-------Color-----------*/
+ .color {
+
+   };
+  .color_cont {
+
+  };
+.color_list {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 150px;
+  top: 145px;
+  background-color: $mainFontColor100;
+  border-radius: 6px;
+  };
+.color_name {
+  position: absolute;
+  width: 159px;
+  height: 57px;
+  left: 260px;
+  top: 152px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+
+  };
+.color_name_text {
+
+  };
+/*__________________*/

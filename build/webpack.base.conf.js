@@ -103,6 +103,7 @@ module.exports = {
       inject: true
     }),
     new CopyWebpackPlugin([
+      // { from: `${PATHS.src}`, test: /\.html$/, to: path.join(__dirname, "dist") },
       { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
       { from: `${PATHS.src}/static`, to: '' },
     ])
