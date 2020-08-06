@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,69 +7,92 @@
   <title>Webpack Template</title>
 </head>
 <body>
-<section>
-    <header class="headerColorType"></header>
-    <main>
-        <section class="color">
-            <div class="color_cont">
-                <div class="color_list"></div>
-                <div class="color_name">
-                    <span class="color_name_text">Dark Shade 100%</span>
-                    <br>  #1F2041
+<div class="body-container">
+    <header class="mainheder">
+        header
+        <div class="mainheder__logo"></div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="block-color">
+            <div class="block-color__cont ">
+                <div class="block-color__cont__bg block-color__s100"> </div>
+                <div class="block-color__cont__text">
+                    Dark Shade 100%
+                    <br> <span class="block-color__cont__text__span">#1F2041 </span>
                 </div>
             </div>
-            <div class="color_list"></div>
-            <div class="color_name">
-                <span class="color_name_text">Dark Shade 75%</span>
-                <br>#1F2041
-            </div>
-            <div class="color_list"></div>
-            <div class="color_name">
-                <span class="color_name_text">Dark Shade 50%</span>
-                <br>#1F2041
-            </div>
-            <div class="color_list"></div>
-            <div class="color_name">
-                <span class="color_name_text">Dark Shade 25%</span>
-                <br>#1F2041
-            </div>
-            <div class="color_list"></div>
-            <div class="color_name">
-                <span class="color_name_text">Dark Shade 5%</span>
-                <br>#1F2041
-            </div>
-            <div class="color_list"></div>
-            <div class="color_name">
-                <span class="color_name_text">Purple</span>
-                <br> #BC9CFF
-            </div>
-            <div class="color_list"></div>
-            <div class="color_name">
-                <span class="color_name_text">Green</span>
-                <br>#6FCF97
-            </div>
-        </section>
-        <section class="type">
-            <div class="type_cont">
-                <div class="type_cont_list">H1</div>
-                <div class="type_cont_text">This one is the sub-section or widget title</div>
-            </div>
-            <div class="type_cont">
-                <div class="type_cont_list">H2</div>
-                <div class="type_cont_text">Next one is the item title inside widgets</div>
+            <div class="block-color__cont ">
+                <div class="block-color__cont__bg block-color__s75"></div>
+                <div class="block-color__cont__text">
+                    Dark Shade 75%
+                    <br> <span class="block-color__cont__text__span">#1F2041 </span>
+                </div>
+            </div>               
+            <div class="block-color__cont">
+                <div class="block-color__cont__bg block-color__s50"></div>
+                <div class="block-color__cont__text">
+                    Dark Shade 50%
+                    <br> <span class="block-color__cont__text__span">#1F2041 </span>
+                </div>
+            </div>    
+            <div class="block-color__cont">
+                <div class="block-color__cont__bg block-color__s25"></div>
+                <div class="block-color__cont__text">
+                    Dark Shade 25%
+                    <br> <span class="block-color__cont__text__span">#1F2041 </span>
+                </div>
+            </div>                                         
+            <div class="block-color__cont">
+                <div class="block-color__cont__bg block-color__s5"></div>
+                <div class="block-color__cont__text">
+                    Dark Shade 5%
+                    <br> <span class="block-color__cont__text__span">#1F2041 </span>
+                </div>
+            </div>                   
+            <div class="block-color__cont">
+                <div class="block-color__cont__bg block-color__purple"></div>
+                <div class="block-color__cont__text">
+                    Purple
+                    <br> <span class="block-color__cont__text__span">#6FCF97 </span>
+                </div>
+            </div>    
+            <div class="block-color__cont ">
+                <div class="block-color__cont__bg block-color__green"></div>
+                <div class="block-color__cont__text">
+                    Green
+                    <br><span class="block-color__cont__text__span">#6FCF97</span>
+                </div>
+            </div>                                              
         </div>
-            <div class="type_cont">
-                <div class="type_cont_list">H3</div>
-                <div class="type_cpnt_text">This is a label or CTA text</div>
+        <div class="text-cont">
+            <div class="block-text">
+                <div class="block-text__name  block-text__nameh1">H1</div>
+                <div class="block-text__primer block-text_primerh1">
+                    This one is the sub-section or widget title
+                </div>
             </div>
-            <div class="type_cont">
-                <div class="type_cont_list">Body</div>
-                <div class="type_cont_text">This is the body text which is used for most of the design, like paragraphs, lists, etc.</div>
+            <div class="block-text">
+                <div class="block-text__name  block-text__nameh2">H2</div>
+                <div class="block-text__primer block-text_primerh2">
+                    This one is the sub-section or widget title
+                </div>
             </div>
-
-        </section>
-
-    </main>
-</section>
+            <div class="block-text">
+                <div class="block-text__name  block-text__nameh3">H3</div>
+                <div class="block-text__primer block-text_primerh3">
+                    This is a label or CTA text
+                </div>
+            </div>
+             <div class="block-text">
+                <div class="block-text__name  block-text__namebody">body</div>
+                <div class="block-text__primer block-text_primerbody">
+                    This is a label or CTA text
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>    
 </body>
 </html>

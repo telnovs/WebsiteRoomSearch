@@ -5,37 +5,114 @@ $mainFontColor25  :  rgba(31, 32, 65, 0.25);
 $mainFontColor5   :  rgba(31, 32, 65, 0.05);
 $purpleFontColor  :  #BC9CFF;
 $greenFontColor   :  #6FCF97;
-/*-------Color-----------*/
- .color {
-
-   };
-  .color_cont {
-
-  };
-.color_list {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  left: 150px;
-  top: 145px;
-  background-color: $mainFontColor100;
-  border-radius: 6px;
-  };
-.color_name {
-  position: absolute;
-  width: 159px;
-  height: 57px;
-  left: 260px;
-  top: 152px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 29px;
+/*-------Color & Type-----------*/
+.body-container {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 1440px;
+  height: 900px;
+  background-color: #ffffff;
+  display: block;
+}
+.mainheder {
   display: flex;
-  align-items: center;
+  width:1440px;
+  height:145px;
+  margin: 0 auto;
+  padding: 0px;
+  justify-content: center;
+  &__logo {
+    display: flex;
+  }
+}
+.container {
+  max-width: 1200px;
+  margin:0 auto;
+  height:755px;
+  display: block;
+}
+.row {
+  position: absolute;
+  width: 269.26px;
+  height: 610px;
+  display: block;
 
-  };
-.color_name_text {
+}
+.block-color {
+  display: flex;
+  width: 269.26px;
+  height: 610px;
+  display: block;
 
-  };
-/*__________________*/
+  &__cont {
+    width: 269.26px;
+    height: 70px;
+    display: block;
+    // flex-direction: column;
+    &__bg {
+      
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        display:block;
+        align-items:center;
+        justify-content: center;
+        margin:0 0 15px 0;
+    }
+    &__text {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 29px;
+        display: block;
+        align-items: center;
+        margin: 0px 0 0 120px;
+        width: 150px;
+        height: 70px;
+        &__span{
+          color: $mainFontColor75;
+        }
+    }
+  }
+  
+  &__s100 {
+    background-color: $mainFontColor100;
+  }
+  &__s75 {
+     background-color: $mainFontColor75;
+  }
+  &__s50 {
+    background-color: $mainFontColor50;
+  }
+  &__s25 {
+    background-color: $mainFontColor25;
+  }
+  &__s5 {
+    background-color: $mainFontColor5;
+  }
+  &__purple {
+    background-color: $purpleFontColor;
+  }
+  &__green {
+    background-color: $greenFontColor
+  }
+}
+.text-cont {
+  display: flex;
+}
+.block-text {
+  &_primerh1 {}
+  &_primerh2 {}
+  &_primerh3 {}
+  &_primerbody {}
+  &__name {}
+  &__nameh1 {}
+  &__primer {}
+  &__nameh2 {}
+  &__nameh3 {}
+  &__namebody {}
+}
+
