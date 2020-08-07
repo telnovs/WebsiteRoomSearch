@@ -5,6 +5,44 @@ $mainFontColor25  :  rgba(31, 32, 65, 0.25);
 $mainFontColor5   :  rgba(31, 32, 65, 0.05);
 $purpleFontColor  :  #BC9CFF;
 $greenFontColor   :  #6FCF97;
+
+%box {
+  border-radius: 6px;
+  width: 70px;
+  height: 70px;
+  align-items:center;
+  justify-content: center;
+}
+%h1{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+%h2{
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+}
+%h3{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+%body{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 /*-------Color & Type-----------*/
 .body-container {
   margin: 0 auto;
@@ -15,104 +53,155 @@ $greenFontColor   :  #6FCF97;
   background-color: #ffffff;
   display: block;
 }
-.mainheder {
-  display: flex;
+.heder {
   width:1440px;
   height:145px;
   margin: 0 auto;
   padding: 0px;
-  justify-content: center;
-  &__logo {
-    display: flex;
+}
+.heder-logo {
+  
+}
+.logo {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius:50%;
+  border:solid 3px $mainFontColor25;
+  margin:30px 0 0 30px;
+  padding: 0;
+  &__vector {
+    width: 14px;
+    height: 14px;
+    border-radius: 0 100% 0 0;
+    border:solid 3px $mainFontColor25 ;
+    border-color:transparent $mainFontColor25  transparent   transparent;
+    margin: 15.47px 0 15.53px 8.5px;
+    position: absolute;
+    padding: 0;
+  }
+  &__vector1 {
+    position: absolute;
+    width: 12px;
+    height: 9.09px;
+    border-radius:  100% 0 0 0;
+    border:solid 3px $mainFontColor25 ;
+    border-color: $mainFontColor25 transparent transparent   transparent;
+    margin: 15.47px 0 15.53px 22px;
   }
 }
+
 .container {
   max-width: 1200px;
   margin:0 auto;
   height:755px;
   display: block;
 }
-.row {
-  position: absolute;
-  width: 269.26px;
-  height: 610px;
-  display: block;
 
-}
-.block-color {
-  display: flex;
-  width: 269.26px;
-  height: 610px;
-  display: block;
-
+.about {
+  &__row {
+    display: flex;
+    font-size: 0;
+    margin: 0px -15px;
+    width:1200px;
+    height: 755px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  &__column {
+    padding: 0px 0px;
+    flex: 0 0 50%;
+  }
   &__cont {
+    display:block;
     width: 269.26px;
     height: 70px;
-    display: block;
-    // flex-direction: column;
-    &__bg {
-      
-        position: absolute;
-        width: 70px;
-        height: 70px;
-        border-radius: 6px;
-        display:block;
-        align-items:center;
-        justify-content: center;
-        margin:0 0 15px 0;
+    margin:0 0 20px 0;
+  }
+  &__box {
+    position: absolute;
+    display:block;
+    &__cont100 {
+      @extend %box;
+      background-color: $mainFontColor100;
     }
-    &__text {
-        font-family: Quicksand;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 19px;
-        line-height: 29px;
+    &__cont75 {
+      @extend %box;
+      background-color: $mainFontColor75;
+    }
+    &__cont50 {
+      @extend %box;
+      background-color: $mainFontColor50;
+    }
+    &__cont25 {
+      @extend %box;
+      background-color: $mainFontColor25;
+    }
+    &__cont5 {
+      @extend %box;
+      background-color: $mainFontColor5;
+    }
+     &__contPurple {
+      @extend %box;
+      background-color: $purpleFontColor;
+    }
+     &__contGreen {
+      @extend %box;
+      background-color: $greenFontColor;
+    }
+    &__conth1{
+      @extend %box;
+      @extend %h1;
+      color: $mainFontColor25;
+
+    }
+    &__conth2{
+      @extend %box;
+      @extend %h2;
+      color: $mainFontColor25;
+    }
+    &__conth3{
+      @extend %box;
+      @extend %h3;
+      color: $mainFontColor25;
+
+    }
+    &__contBody{
+      @extend %box;
+      @extend %body;
+      color: $mainFontColor25;
+    }
+  }
+  &__box1 {
+    &__name1 {
+        @extend %h2;
         display: block;
         align-items: center;
         margin: 0px 0 0 120px;
         width: 150px;
-        height: 70px;
-        &__span{
-          color: $mainFontColor75;
-        }
+        height: 70px;}
+    &__color { 
+      color: $mainFontColor75;
+    }
+    &__nameh1{
+        margin: 0px 0 0 120px;
+        width: 337px;
+        @extend %h1;
+    }
+    &__nameh2{
+        margin: 0px 0 0 120px;
+        @extend %h2;
+        width: 337px;
+    }
+    &__nameh3{
+        @extend %h2;
+        margin: 0px 0 0 120px;
+        width: 337px;
+    }
+    &__nameBody{
+      margin: 0px 0 0 120px;
+      @extend %body;
+      width: 337px;
     }
   }
-  
-  &__s100 {
-    background-color: $mainFontColor100;
-  }
-  &__s75 {
-     background-color: $mainFontColor75;
-  }
-  &__s50 {
-    background-color: $mainFontColor50;
-  }
-  &__s25 {
-    background-color: $mainFontColor25;
-  }
-  &__s5 {
-    background-color: $mainFontColor5;
-  }
-  &__purple {
-    background-color: $purpleFontColor;
-  }
-  &__green {
-    background-color: $greenFontColor
-  }
 }
-.text-cont {
-  display: flex;
-}
-.block-text {
-  &_primerh1 {}
-  &_primerh2 {}
-  &_primerh3 {}
-  &_primerbody {}
-  &__name {}
-  &__nameh1 {}
-  &__primer {}
-  &__nameh2 {}
-  &__nameh3 {}
-  &__namebody {}
-}
-
