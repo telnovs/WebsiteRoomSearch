@@ -56,7 +56,7 @@ module.exports = {
         name: '[name].[ext]'
       }
     }, {
-      test: /\.scss$/,
+      test: /\.(scss|sass)$/,
       use: [
         'style-loader',
         MiniCssExtractPlugin.loader,
@@ -72,6 +72,13 @@ module.exports = {
         }
       ]
     }, {
+      test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]'
+      }
+    },
+    {
       test: /\.css$/,
       use: [
         'style-loader',
@@ -103,6 +110,11 @@ module.exports = {
       inject: true
     }),
     new CopyWebpackPlugin([
+       // Fonts:
+        {
+          from: `${PATHS.src}/${PATHS.assets}fonts`,
+          to: `${PATHS.assets}fonts`
+        },
       // { from: `${PATHS.src}`, test: /\.html$/, to: path.join(__dirname, "dist") },
       { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
       { from: `${PATHS.src}/static`, to: '' },

@@ -2,7 +2,7 @@
 import './js/'
 
 // SCSS
-import './scss/main.scss'
+import './assets/scss/main.scss'
 
 // CSS (example)
 import './css/main.css'
@@ -19,12 +19,12 @@ import store from './store'
 Vue.component('example-component', require('./components/Example.vue').default)
 
 // Vue init
-const app = new Vue({
-  data () {
-    return {
-      showExampleComponent: false,
-    }
-  },
-  store,
-  el: '#app'
-})
+// const app = new Vue({
+//   data () {
+//     return {
+//       showExampleComponent: false,
+//     }
+//   },
+//   store,
+//   el: '#app'
+// })
