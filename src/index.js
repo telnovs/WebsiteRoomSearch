@@ -5,7 +5,7 @@ import './js/'
 import './assets/scss/main.scss'
 
 // CSS (example)
-import './css/main.css'
+import './assets/css/main.css'
 
 // Bootstrap (example)
 // import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
@@ -16,7 +16,7 @@ window.Vue = require('vue')
 import store from './store'
 
 // Vue components (for use in html)
-Vue.component('example-component', require('./components/Example.vue').default)
+Vue.component('example-component', require('./js/components/Example.vue').default)
 
 // Vue init
 // const app = new Vue({
